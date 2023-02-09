@@ -1,0 +1,148 @@
+body{
+    background-color: #0f0f0f; 
+    color: #25812b;
+    font-family: "Space Mono", monospace;
+}
+
+h1{
+    color: #a2f29d;
+}
+
+h3{
+    color: #6fe66c;
+    font-weight: bold;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px 0 rgb(0, 100, 0, .84);
+    transition: all ease-in-out 0.2s;
+}
+
+.profile-picture:hover {
+    box-shadow: 0 8px 12px 0 rgb(0, 100, 0, 0.84);
+}
+
+.quote{
+    font-style: italic;
+}
+ 
+.container{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.intro{
+    text-align: center;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 480px){
+    .about-grid{
+        grid-template-columns: 100%;
+    }
+}
+
+.i-am, .i-like{
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-list{
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-heading{
+    text-align: center;
+}
+
+.portfolio-image{
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgb(0, 100, 0, .84);
+    transition: all ease-in-out .2s;
+}
+
+.employment-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media (max-width: 650px){
+    .employment-grid{
+        grid-template-columns: 100%;
+    }
+}
+
+.project-image-wrapper:hover > img{
+    filter: brightness(.75);
+    box-shadow: 0 8px 12px 0 rgb(0, 100, 0, .84);
+}
+
+.project-image-wrapper{
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+}
+
+.project-image-wrapper:hover > h4{
+    visibility: visible;
+}
+
+.project-image-wrapper > h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+}
+
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 650px){
+    .portfolio-grid{
+        grid-template-columns: 100%;
+    }
+}
+
+.links-heading{
+    text-align: center;
+}
+
+.links-list{
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+}
+
+@media (max-width: 650px){
+    .links-list{
+        grid-template-columns: 100%;
+    }
+}
+
+.link{
+    justify-self: center;
+    padding: 4%;
+}
+
+a:link, a:visited, a:active{ 
+    text-decoration: none;
+    color: #6fe66c;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #a2f29d;
+}
